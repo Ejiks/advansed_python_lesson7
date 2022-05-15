@@ -5,9 +5,9 @@ def balanser(unbalansed_str):
     left_balans = "({["
     right_balans = ")}]"
     for item in unbalansed_str:
-        if item in left_balans:
+        if item in left_balans or balans.isEmpty() == True:
             balans.push(item)
-        elif item in right_balans:
+        elif item in right_balans: 
             if right_balans.find(item) == left_balans.find(balans.peek()):
                 balans.pop()
             else:
