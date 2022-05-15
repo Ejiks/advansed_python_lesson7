@@ -12,6 +12,6 @@ def balanser(unbalansed_str):
                 balans.pop()
             else:
                 balans.push(item)
-    if balans.size() != 0:
+    if balans.isEmpty() == False:
         return "Несбалансированно"
     return "Cбалансированно"
